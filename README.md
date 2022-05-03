@@ -39,3 +39,46 @@ rics, visual quality, and subjective evaluation._
 </div>
 
 [Paper in arxiv.org]((https://arxiv.org/abs/2204.02854))
+
+- `ADE20K`. 
+  - [Download official dataset](http://data.csail.mit.edu/places/ADEchallenge/ADEChallengeData2016.zip) named `ADEChallengeData2016.zip` and unzip this file at the corresponding directory, i.e. `unzip ADEChallengeData2016.zip`.
+  - [Download official instance annotations](http://sceneparsing.csail.mit.edu/data/ChallengeData2017/annotations_instance.tar) named `annotations_instance.tar` and extract annotation files at `ADE20K` dataset root, i.e. `tar xvf annotations_instance.tar -C ADEChallengeData2016/` (in the situation where both `ADEChallengeData2016.zip` and `annotations_instance.tar` are downloaded at the same directory). 
+  - Directories are organized as follows:
+```
+ADEChallengeData2016/
+    ├── annotations/
+    │   ├── training/
+    │   │   ├── ADE_train_00000001.png
+    │   │   ├── ADE_train_00004043.png
+    │   │   ├── ...
+    │   │   └── ADE_train_00020210.png
+    │   └── validation/
+    │       ├── ADE_val_00000001.png
+    │       ├── ADE_val_00000401.png
+    │       ├── ...
+    │       └── ADE_val_00002000.png
+    ├── annotations_instance/
+    │   ├── training/
+    │   │   ├── ADE_train_00000001.png
+    │   │   ├── ADE_train_00004043.png
+    │   │   ├── ...
+    │   │   └── ADE_train_00020210.png
+    │   └── validation/
+    │       ├── ADE_val_00000001.png
+    │       ├── ADE_val_00000401.png
+    │       ├── ...
+    │       └── ADE_val_00002000.png
+    │── images/
+    │    ├── training/
+    │    │   ├── ADE_train_00000001.jpg
+    │    │   ├── ADE_train_00004043.jpg
+    │    │   ├── ...
+    │    │   └── ADE_train_00020210.jpg
+    │    └── validation/
+    │       ├── ADE_val_00000001.jpg
+    │       ├── ADE_val_00000401.jpg
+    │       ├── ...
+    │       └── ADE_val_00002000.jpg
+    ├── objectInfo150.txt
+    └── sceneCategories.txt
+```
