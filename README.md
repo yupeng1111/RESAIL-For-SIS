@@ -82,3 +82,5 @@ ADEChallengeData2016/
     ├── objectInfo150.txt
     └── sceneCategories.txt
 ```
+
+# _todo_ model's downlongding, preparation of cityscape and brief of train & test
